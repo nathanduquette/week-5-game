@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="eng">	
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>questionQuest</title>
+</head>
+<body class="">
+<div class="container wrapper">
+	<div class="jumbotron">
+		<h1>QUESTION QUEST</h1>
+			<div id="instructions">
+				<p>Make preporations for quest fulfillment.</p>
+				<p>Facts and arguments will be tested with time.</p>
+				<p>Success is based on fullfilling tasks as time allows.</p>
+				<p>Prapare to bask in glory for the brain.</p>
+				<p>Study and return as failure returns no glory.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3" id="correct">correct</div>
+
+			<div class="col-sm-6">
+
+				<div class="row">
+				<button onclick="timer()">Click me</button>
+					<div class="col-sm-12 " id="timer">Get Ready</div>
+						<form name="quiz" onsubmit="return onSubmit()">
+							<div class="col-sm-12" class="question">
+							<h1>Q 1: Which unit indicates the light intensity?</h1>
+
+								<input type="radio" name="q1" value="a">a. Candela<br>
+								<input type="radio" name="q1" value="b">b. Lumin<br>
+								<input type="radio" name="q1" value="c">c. Steradian<br>
+								<input type="radio" name="q1" value="d">d. Lucifer<br>
+
+							</div>
+							<div class="col-sm-12" class="question">
+							<h1>Q 2: Who is the father of the atomic bomb?</h1>
+
+								<input type="radio" name="q2" value="a">a. David Bohm<br>
+								<input type="radio" name="q2" value="b">b. Sidney Dancoff<br>
+								<input type="radio" name="q2" value="c">c. Robert Oppenheimer<br>
+								<input type="radio" name="q2" value="d">d. Arnod Nordsieck<br>
+
+							</div>
+							<div class="col-sm-12" class="question">
+							<h1>Q 3: Who invented the barometer?</h1>
+
+								<input type="radio" name="q3" value="a">a. Torricelli<br>
+								<input type="radio" name="q3" value="b">b. Galileo<br>
+								<input type="radio" name="q3" value="c">c. Barberini<br>
+								<input type="radio" name="q3" value="d">d. Castelli<br>
+
+							</div>
+							<div class="col-sm-12" class="question">
+							<h1>Q 4: Who was the first American in space?</h1>
+
+								<input type="radio" name="q4" value="a">a. Stuart Roosa<br>
+								<input type="radio" name="q4" value="b">b. Alan Shepard<br>
+								<input type="radio" name="q4" value="c">c. Edgar Mitchell<br>
+								<input type="radio" name="q4" value="d">d. Pete Frank<br>
+
+							</div>
+							<div class="col-sm-12" class="question">
+							<h1>Q 5: Two brothers invented the hot air balloon. What was their surname?</h1>
+
+								<input type="radio" name="q5" value="a">a. Levity<br>
+								<input type="radio" name="q5" value="b">b. Étienne<br>
+								<input type="radio" name="q5" value="c">c. Duret<br>
+								<input type="radio" name="q5" value="d">d. Montgolfier<br>
+
+							</div>
+							<div class="col-sm-12" class="question">
+							<h1>Q 6:  Who was the inventor of the steam engine?</h1>
+
+								<input type="radio" name="q6" value="a">a. Nicola Tesla<br>
+								<input type="radio" name="q6" value="b">b. Thomas Newcomen<br>
+								<input type="radio" name="q6" value="c">c. James Watt<br>
+								<input type="radio" name="q6" value="d">d. Matthew Boulton<br>
+
+							</div>
+							<hr>
+
+							<button type="submit">Submit Test</button>
+						
+						</form>
+					</div>
+				</div>
+			<div class="col-sm-3" id="incorrect">incorrect</div>
+		</div>
+	</div>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>    
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="eng">	
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>questionQuest</title>
+</head>
+<body class="wrapper">
+<div>
+	
+		<h1>QUESTION QUEST</h1>
+			<div id="instructions">
+			<h2>
+				<p>Make preporations for quest fulfillment.</p>
+				<p>Facts and arguments will be tested with time.</p>
+				<p>Success is based on fullfilling tasks as time allows.</p>
+				<p>Prapare to bask in glory for the brain.</p>
+				<p>Study and return as failure returns no glory.</p>
+				</h2>
+			</div>
+		</div>
+		<div>
+			<div  id="correct">correct</div>
+
+			<div class="">
+
+				<div >
+					<div id="timer">Get Ready</div>
+						<form name="quiz" onsubmit="return onSubmit()">
+							
+							<div class="question" id="one">
+							<h1>Q 1: Which unit indicates the light intensity?</h1>
+
+								<input type="radio" name="q1" value="a">a. Candela<br>
+								<input type="radio" name="q1" value="b">b. Lumin<br>
+								<input type="radio" name="q1" value="c">c. Steradian<br>
+								<input type="radio" name="q1" value="d">d. Lucifer<br>
+
+							</div>
+							
+							
+							<div class="question" id="two">
+							<h1>Q 2: Who is the father of the atomic bomb?</h1>
+
+								<input type="radio" name="q2" value="a">a. David Bohm<br>
+								<input type="radio" name="q2" value="b">b. Sidney Dancoff<br>
+								<input type="radio" name="q2" value="c">c. Robert Oppenheimer<br>
+								<input type="radio" name="q2" value="d">d. Arnod Nordsieck<br>
+
+							</div>
+							
+							<div class="question" id="two">
+							<h1>Q 3: Who invented the barometer?</h1>
+
+								<input type="radio" name="q3" value="a">a. Torricelli<br>
+								<input type="radio" name="q3" value="b">b. Galileo<br>
+								<input type="radio" name="q3" value="c">c. Barberini<br>
+								<input type="radio" name="q3" value="d">d. Castelli<br>
+
+							</div>
+							
+							<div class="question" id="four">
+							<h1>Q 4: Who was the first American in space?</h1>
+
+								<input type="radio" name="q4" value="a">a. Stuart Roosa<br>
+								<input type="radio" name="q4" value="b">b. Alan Shepard<br>
+								<input type="radio" name="q4" value="c">c. Edgar Mitchell<br>
+								<input type="radio" name="q4" value="d">d. Pete Frank<br>
+
+							</div>
+							<div class="question" id="one">
+							<h1>Q 1: Which unit indicates the light intensity?</h1>
+
+								<input type="radio" name="q5" value="a">a. Candela<br>
+								<input type="radio" name="q5" value="b">b. Lumin<br>
+								<input type="radio" name="q5" value="c">c. Steradian<br>
+								<input type="radio" name="q5" value="d">d. Lucifer<br>
+
+							</div>
+							<div class="question" id="one">
+							<h1>Q 1: Which unit indicates the light intensity?</h1>
+
+								<input type="radio" name="q6" value="a">a. Candela<br>
+								<input type="radio" name="q6" value="b">b. Lumin<br>
+								<input type="radio" name="q6" value="c">c. Steradian<br>
+								<input type="radio" name="q6" value="d">d. Lucifer<br>
+
+							</div>
+							
+							
+							<hr>
+
+							<button type="submit">Submit Test</button>
+						
+						</form>
+					</div>
+				</div>
+		</div>
+</div>
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>    
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</body>
+</html> -->
